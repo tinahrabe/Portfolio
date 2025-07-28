@@ -20,8 +20,7 @@ video {
 }
 
 .corps nav {
-  backdrop-filter: blur(1rem); /* Intensité du flou */
-  padding: 1rem;
+  /* backdrop-filter: blur(1rem);  Intensité du flou */
 }
 .corps nav ul {
   display: flex;
@@ -36,6 +35,84 @@ video {
 .corps nav ul li a {
   text-decoration: none;
   color: white;
+}
+.corps nav ul li a:hover {
+  background-color: rgb(7, 83, 83);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.corps header h1 {
+  text-align: center;
+  padding: 3rem;
+  font-size: 3rem;
+  background: linear-gradient(to right, rgb(7, 83, 83), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.corps header .description {
+  width: 40rem;
+  height: 3rem;
+  background: linear-gradient(135deg, rgb(7, 83, 83), #2575fc);
+  /*Dégradé*/
+  transform: skew(-30deg);
+  /*Inclinaisondufond*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+}
+.corps header .description p {
+  color: white;
+  font-family: cursive;
+  font-size: 1rem;
+  white-space: nowrap;
+  animation: defiler 15s linear infinite;
+}
+@keyframes defiler {
+  0% {
+    transform: skew(15deg) translateX(0);
+  }
+  100% {
+    transform: skew(15deg) translateX(-100%);
+  }
+}
+.corps header .download-button {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: 0.2rem solid rgb(7, 83, 83);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  margin-top: 3rem;
+}
+.corps header .download-button:hover {
+  background-color: rgb(7, 83, 83);
+  color: white;
+  transition: 0.3s;
+}
+.corps header .photo {
+  display: flex;
+  justify-content: end;
+}
+.corps header .photo img {
+  justify-content: end;
+  width: 35%;
+  height: 35%;
+  object-fit: cover;
+  position: relative;
+  bottom: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

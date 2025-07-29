@@ -14,13 +14,17 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
 
 .corps nav {
-  /* backdrop-filter: blur(1rem);  Intensité du flou */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: flex-end;
 }
 .corps nav ul {
   display: flex;
@@ -41,6 +45,10 @@ video {
   padding: 0.5rem;
   border-radius: 0.5rem;
   transition: 0.3s;
+}
+.corps header {
+  margin-top: 6rem;
+  scroll-margin-top: 2rem;
 }
 .corps header h1 {
   text-align: center;
@@ -113,6 +121,11 @@ video {
   object-fit: cover;
   position: relative;
   bottom: 5rem;
+}
+
+section {
+  background-color: rgb(7, 83, 83);
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

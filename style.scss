@@ -22,12 +22,25 @@ video {
         left: 0;
         right: 0;
         justify-content: flex-end;
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+        /* Pas de fond au départ */
+            &.transparent {
+                background-color: transparent;
+}
+
+/* Fond visible après scroll */
+            &.solid {
+                 /* ou une autre couleur */
+                backdrop-filter: blur(5px); /* optionnel pour effet flou */
+}
         ul{
             display: flex;
             gap: 4rem;
             margin-top: 2rem;
             justify-content: end;
             font-size: 1.2rem;
+            margin-bottom: 1rem;
             li{
                  list-style-type: none;
                 a{
@@ -115,7 +128,23 @@ video {
         }
     }
 }
-section{
+.section1{
     background-color: rgb(7, 83, 83);
     height: 100vh;
+    scroll-margin-top: 4rem;
+    h2{
+        text-align: center;
+        padding: 3rem;
+        font-size: 3rem;
+        background: linear-gradient(to right, white, rgb(7, 83, 83));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
 }

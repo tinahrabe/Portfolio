@@ -155,5 +155,9 @@ video {
   gap: 2rem;
   margin-top: 2rem;
 }
+.section1 .container .text {
+  width: 75%;
+  margin-left: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */

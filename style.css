@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -156,8 +157,19 @@ video {
   margin-top: 2rem;
 }
 .section1 .container .text {
-  width: 75%;
-  margin-left: 1rem;
+  width: 50%;
+}
+.section1 .container .image .bloc {
+  background: linear-gradient(135deg, rgb(7, 83, 83), #2575fc);
+  padding: 0.5rem;
+}
+.section1 .container .image .bloc .bloc-text {
+  display: flex;
+  color: white;
+  gap: 3rem;
+}
+.section1 .container .image .bloc p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

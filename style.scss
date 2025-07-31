@@ -151,18 +151,42 @@ video {
             width: 50%;
         }
         .image{
-            .bloc{
-                 background: linear-gradient(135deg, rgb(7, 83, 83), #2575fc);
-                 padding: 0.5rem;
-                 .bloc-text{
-                 display: flex;
-                 color: white;
-                 gap: 3rem;
+           .bloc{
+            display: flex;
+            gap: 2rem;
+            padding: 1rem;
+            .bloc1{
+                margin-top: 3rem;
+                i{
+                    font-size: 1.5rem;
+                    padding: 1rem;
+                      background: linear-gradient(135deg, rgb(7, 83, 83), #2575fc);
+                      border-radius: 120px;
+                      -webkit-border-radius: 120px;
+                      -moz-border-radius: 120px;
+                      -ms-border-radius: 120px;
+                      -o-border-radius: 120px;
 }
-                p{
-                    text-align: center;
-                }
             }
+            .bloc2{
+                 background-color: white;
+                 padding: 1rem;
+                 border-radius: 1rem;
+                
+                 -webkit-border-radius: 1rem;
+                 -moz-border-radius: 1rem;
+                 -ms-border-radius: 1rem;
+                 -o-border-radius: 1rem;
+            }
+             .sous-bloc1{
+                     
+                background: linear-gradient(135deg, rgb(7, 83, 83), #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+                display: flex;
+                gap: 3rem;
+               }
+            }
+           }
         }
     }
-}

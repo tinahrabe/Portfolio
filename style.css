@@ -60,8 +60,9 @@ video {
   transition: 0.3s;
 }
 .corps header {
-  margin-top: 6rem;
-  scroll-margin-top: 2rem;
+  margin-top: 10rem;
+  scroll-margin-top: 10rem;
+  height: 100vh;
 }
 .corps header h1 {
   text-align: center;
@@ -123,18 +124,6 @@ video {
   color: white;
   transition: 0.3s;
 }
-.corps header .photo {
-  display: flex;
-  justify-content: end;
-}
-.corps header .photo img {
-  justify-content: end;
-  width: 35%;
-  height: 35%;
-  object-fit: cover;
-  position: relative;
-  bottom: 5rem;
-}
 
 .section1 {
   background-color: rgb(7, 83, 83);
@@ -192,6 +181,34 @@ video {
   -webkit-text-fill-color: transparent;
   display: flex;
   gap: 3rem;
+}
+
+.section2 {
+  height: 100vh;
+  padding: 2rem;
+  scroll-margin-top: 4rem;
+}
+.section2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section2 .container .project {
+  width: 300px;
+  text-align: center;
+}
+.section2 .container .project img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.section2 .container .project h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.section2 .container .project p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

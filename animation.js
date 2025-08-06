@@ -22,3 +22,29 @@ window.addEventListener('scroll', function() {
     navbar.classList.add('transparent');
   }
 });
+
+
+const buttons = document.querySelectorAll('.filtre-buttons button');
+const projets = document.querySelectorAll('.projet');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Enlève la classe "actif" de tous les boutons
+    buttons.forEach(btn => btn.classList.remove('actif'));
+    button.classList.add('actif');
+
+    const filtre = button.getAttribute('data-filtre');
+
+    projets.forEach(projet => {
+      if (filtre === 'tous') {
+        projet.style.display = 'block';
+      } else {
+        if (projet.classList.contains(filtre)) {
+          projet.style.display = 'block';
+        } else {
+          projet.style.display = 'none';
+        }
+      }
+    });
+  });
+});

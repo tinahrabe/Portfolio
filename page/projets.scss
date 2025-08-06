@@ -1,0 +1,54 @@
+ .section2{
+    height: 100vh;
+    scroll-margin-top: 6rem;
+       h2{
+              text-align: center;
+              margin-top: 2rem;            
+              font-size: 3rem;
+              background: $background-gradient;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+       }
+       .container-project{
+.filtre-buttons {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.filtre-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #2575fc;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filtre-buttons button.actif {
+  background-color: #074b83;
+}
+
+.projets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.projet {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+       }
+    }

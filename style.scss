@@ -48,7 +48,7 @@ video {
                     text-decoration: none;
                     color: white;
                     &:hover{
-                        background-color: rgb(7, 83, 83);
+                        background: $melange-color;
                         padding: 0.5rem;
                         border-radius: 0.5rem;
                         transition: 0.3s;
@@ -180,30 +180,4 @@ video {
         }
     }
 
-    .section2{
-        height: 100vh;
-        padding: 2rem;
-        scroll-margin-top: 4rem;
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            .project{
-                width: 300px;
-                text-align: center;
-                img{
-                    width: 100%;
-                    border-radius: 1rem;
-                }
-                h3{
-                    margin-top: 1rem;
-                    font-size: 1.5rem;
-                }
-                p{
-                    margin-top: 0.5rem;
-                    font-size: 1rem;
-                }
-            }
-        }
-    }
+   

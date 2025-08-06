@@ -1,0 +1,14 @@
+.section3 {
+  height: 100vh;
+  background: $melange-color;
+  scroll-margin-top: 4.3rem;
+}
+.section3 h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  background: $background-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

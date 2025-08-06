@@ -252,4 +252,25 @@ video {
   -webkit-text-fill-color: transparent;
 }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.icon i {
+  font-size: 4rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgb(218, 15, 15), #720cee);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.icon i:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 /*# sourceMappingURL=style.css.map */

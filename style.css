@@ -183,6 +183,27 @@ video {
   gap: 3rem;
 }
 
+.section4 {
+  scroll-margin-top: 6rem;
+  height: 100vh;
+}
+.section4 .h2 {
+  text-align: center;
+  font-size: 3rem;
+  background: linear-gradient(135deg, rgb(218, 15, 15), #720cee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section4 .container-contact {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.section4 .container-contact .message {
+  background: linear-gradient(135deg, rgb(218, 15, 15), #720cee);
+}
+
 .section2 {
   height: 100vh;
   scroll-margin-top: 6rem;

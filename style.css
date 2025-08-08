@@ -128,9 +128,10 @@ video {
 .section1 {
   background-color: rgb(7, 83, 83);
   height: 100vh;
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 4.2rem;
 }
 .section1 h2 {
+  margin-top: 0.3rem;
   text-align: center;
   padding: 3rem;
   font-size: 3rem;
@@ -188,6 +189,7 @@ video {
   height: 100vh;
 }
 .section4 .h2 {
+  margin-top: 6rem;
   text-align: center;
   font-size: 3rem;
   background: linear-gradient(135deg, rgb(218, 15, 15), #720cee);
@@ -270,7 +272,7 @@ video {
 }
 .section2 h2 {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 6rem;
   font-size: 3rem;
   background: linear-gradient(to right, white, rgb(7, 83, 83));
   -webkit-background-clip: text;

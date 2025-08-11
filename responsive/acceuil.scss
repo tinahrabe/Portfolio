@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    .corps {
+        nav {
+            ul {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: rgba(7, 83, 83, 0.9);
+                backdrop-filter: blur(5px);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                transition: right 0.3s ease;
+                z-index: 999;
+
+                &.active {
+                    right: 0;
+                }
+            }
+
+            .menu-toggle {
+                display: block;
+                z-index: 1000;
+            }
+        }
+
+        header {
+            margin-top: 5rem;
+            height: auto;
+            padding-bottom: 2rem;
+
+            h1 {
+                font-size: 1.8rem;
+                padding: 1rem;
+            }
+
+            .description {
+                width: 90%;
+                height: 2.5rem;
+                transform: skew(-15deg);
+                
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .download-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

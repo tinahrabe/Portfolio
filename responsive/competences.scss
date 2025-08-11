@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .section3 {
+        height: auto;
+        padding: 2rem 0;
+
+        .icon {
+            flex-wrap: wrap;
+            padding: 0 1rem;
+
+            i {
+                font-size: 2.5rem;
+                padding: 0.8rem;
+                margin: 0.5rem;
+            }
+        }
+    }
+}

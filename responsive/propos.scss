@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .section1 {
+        height: auto;
+        padding-bottom: 2rem;
+
+        .container {
+            flex-direction: column;
+            padding: 1rem;
+
+            .text {
+                width: 90%;
+                margin-bottom: 2rem;
+            }
+
+            .image {
+                width: 90%;
+
+                .bloc {
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    .bloc1 {
+                        margin-top: 0;
+                        align-self: center;
+                    }
+
+                    .sous-bloc1 {
+                        flex-direction: column;
+                        gap: 1rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
    <div class="corps">
     <video src="video/fond.mp4" autoplay muted loop playsinline></video>
     <nav id="navbar">
-        <ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times" style="display: none;"></i>
+        </div>
+        <ul id="nav-links">
             <li><a href="#acceuil">Accueil</a></li>
             <li><a href="#propos">A propos</a></li>
             <li><a href="#projet">Projets</a></li>

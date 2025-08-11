@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .section4 {
+        height: auto;
+        padding-bottom: 2rem;
+
+        .container-contact {
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+
+            .message, .contact {
+                width: 90%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

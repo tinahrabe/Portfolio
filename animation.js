@@ -48,3 +48,25 @@ buttons.forEach(button => {
     });
   });
 });
+
+
+// Menu mobile
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+const barsIcon = menuToggle.querySelector('.fa-bars');
+const timesIcon = menuToggle.querySelector('.fa-times');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    barsIcon.style.display = barsIcon.style.display === 'none' ? 'block' : 'none';
+    timesIcon.style.display = timesIcon.style.display === 'none' ? 'block' : 'none';
+});
+
+// Fermer le menu quand on clique sur un lien
+document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        barsIcon.style.display = 'block';
+        timesIcon.style.display = 'none';
+    });
+});

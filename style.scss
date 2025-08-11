@@ -15,6 +15,7 @@ video {
     height: 100vh;
     object-fit: cover;
     z-index: -1;
+    
 }
 .corps{
     nav{
@@ -35,6 +36,14 @@ video {
                  /* ou une autre couleur */
                 backdrop-filter: blur(5px); /* optionnel pour effet flou */
 }
+                    .menu-toggle {
+            display: none; // cacher le burger par défaut
+             font-size: 2rem;
+             color: white;
+             cursor: pointer;       
+             padding: 1rem;
+            }
+
         ul{
             display: flex;
             gap: 4rem;
@@ -66,6 +75,10 @@ video {
             padding: 3rem;
             font-size: 3rem;
             background: linear-gradient(to right, rgb(7, 83, 83), white);
+            background-clip: text;
+            background-clip: text;
+            background-clip: text;
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -171,6 +184,7 @@ video {
              .sous-bloc1{
                      
                 background: linear-gradient(135deg, rgb(7, 83, 83), #2575fc);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
                 display: flex;

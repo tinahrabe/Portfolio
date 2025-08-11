@@ -15,3 +15,12 @@
         }
     }
 }
+@media (max-width: 768px) {
+    video {
+        display: none;
+    }
+    
+    .corps {
+        background: linear-gradient(135deg, rgb(7, 83, 83), #2575fc);
+    }
+}

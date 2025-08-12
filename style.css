@@ -392,7 +392,7 @@ video {
   .corps nav .menu-toggle {
     display: block;
     z-index: 1000;
-    color: black;
+    color: linear-gradient(to right, white, rgb(7, 83, 83));
   }
   .corps header {
     margin-top: 20rem;
@@ -401,7 +401,7 @@ video {
     scroll-margin-top: 20rem;
   }
   .corps header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 1rem;
   }
   .corps header .description {
@@ -435,7 +435,7 @@ video {
 }
 @media (max-width: 768px) {
   .section1 {
-    height: auto;
+    height: 100vh;
     padding-bottom: 2rem;
   }
   .section1 .container {
@@ -490,7 +490,7 @@ video {
 }
 @media (max-width: 768px) {
   .section4 {
-    height: auto;
+    height: 100vh;
     padding-bottom: 2rem;
   }
   .section4 .container-contact {

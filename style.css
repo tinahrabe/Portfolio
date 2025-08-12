@@ -368,23 +368,24 @@ video {
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .corps nav ul {
     position: fixed;
     top: 0;
     bottom: 0;
-    margin-bottom: 2rem;
     right: -100%;
-    width: 40%;
-    height: 15rem;
+    width: 70%;
+    min-height: 100vh;
     background: linear-gradient(135deg, rgb(7, 83, 83), #2575fc);
     backdrop-filter: blur(5px);
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     transition: right 0.3s ease;
     z-index: 999;
+    margin: 0;
   }
   .corps nav ul.active {
     right: 0;
@@ -393,65 +394,76 @@ video {
     display: block;
     z-index: 1000;
     color: linear-gradient(to right, white, rgb(7, 83, 83));
-  }
-  .corps header {
-    margin-top: 20rem;
-    height: 100vh;
-    padding-bottom: 2rem;
-    scroll-margin-top: 20rem;
-  }
-  .corps header h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 1rem;
   }
+  .corps header {
+    margin-top: 5rem;
+    min-height: 100vh;
+    padding: 1rem;
+    scroll-margin-top: 5rem;
+  }
+  .corps header h1 {
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
   .corps header .description {
-    width: 90%;
-    height: 2.5rem;
+    width: 95%;
+    padding: 1rem;
     transform: skew(-15deg);
   }
   .corps header .description p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.4;
   }
   .corps header .download-button {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    min-width: 160px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .section3 {
-    height: 100vh;
-    padding: 2rem 0;
-    background: none;
+    min-height: 100vh;
+    padding: 2rem 1rem;
   }
   .section3 .icon {
     flex-wrap: wrap;
-    padding: 0 1rem;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
   }
   .section3 .icon i {
-    font-size: 2.5rem;
-    padding: 0.8rem;
+    font-size: 2.8rem;
+    padding: 1rem;
     margin: 0.5rem;
+    min-width: 60px;
+    text-align: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .section1 {
-    height: 100vh;
-    padding-bottom: 2rem;
+    min-height: 100vh;
+    padding: 1rem 0;
   }
   .section1 .container {
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem;
+    gap: 1.5rem;
   }
   .section1 .container .text {
-    width: 90%;
-    margin-bottom: 2rem;
+    width: 95%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
   }
   .section1 .container .image {
-    width: 90%;
+    width: 95%;
+    padding: 1rem;
   }
   .section1 .container .image .bloc {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   .section1 .container .image .bloc .bloc1 {
     margin-top: 0;
@@ -459,48 +471,67 @@ video {
   }
   .section1 .container .image .bloc .sous-bloc1 {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     text-align: center;
+    padding: 0.5rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .section2 {
-    height: 100vh;
-    padding-bottom: 2rem;
+    min-height: 100vh;
+    padding: 1rem 0;
+    margin-top: 5rem;
+  }
+  .section2 .container-project {
+    padding: 0.5rem;
   }
   .section2 .container-project .filtre-buttons {
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     padding: 1rem;
   }
-  .section2 .container-project button {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
+  .section2 .container-project .filtre-buttons button {
+    margin: 0;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    min-width: 100px;
   }
   .section2 .projets {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
   }
   .section2 .projets .projet {
-    width: 90%;
-    margin-bottom: 1rem;
+    width: 95%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .section4 {
-    height: 100vh;
-    padding-bottom: 2rem;
+    min-height: 100vh;
+    padding: 1rem 0;
   }
   .section4 .container-contact {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    gap: 2rem;
   }
   .section4 .container-contact .message, .section4 .container-contact .contact {
-    width: 90%;
-    margin-bottom: 2rem;
+    width: 95%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .section4 .container-contact input, .section4 .container-contact textarea, .section4 .container-contact button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .section4 .container-contact button {
+    min-width: 150px;
+    padding: 1.2rem;
   }
 }
 

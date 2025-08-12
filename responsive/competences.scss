@@ -1,17 +1,20 @@
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-sm) {
     .section3 {
-        height: 100vh;
-        padding: 2rem 0;
-        background: none;
+        min-height: 100vh;
+        padding: 2rem 1rem;
 
         .icon {
             flex-wrap: wrap;
-            padding: 0 1rem;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
 
             i {
-                font-size: 2.5rem;
-                padding: 0.8rem;
+                font-size: 2.8rem;
+                padding: 1rem;
                 margin: 0.5rem;
+                min-width: 60px;
+                text-align: center;
             }
         }
     }

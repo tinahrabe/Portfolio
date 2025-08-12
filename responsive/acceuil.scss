@@ -1,22 +1,23 @@
-@media (max-width: 768px) {
+@media (max-width: $breakpoint-sm) {
     .corps {
         nav {
             ul {
                 position: fixed;
                 top: 0;
                 bottom: 0;
-                margin-bottom: 2rem;
                 right: -100%;
-                width: 40%;
-                height: 15rem;
+                width: 70%;
+                min-height: 100vh;
                 background: $melange-color;
                 backdrop-filter: blur(5px);
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
+                padding-top: 5rem;
                 align-items: center;
-                gap: 2rem;
+                gap: 1.5rem;
                 transition: right 0.3s ease;
                 z-index: 999;
+                margin: 0;
 
                 &.active {
                     right: 0;
@@ -27,33 +28,38 @@
                 display: block;
                 z-index: 1000;
                 color: $background-gradient;
+                font-size: 1.5rem;
+                padding: 1rem;
             }
         }
 
         header {
-            margin-top: 20rem;
-            height: 100vh;
-            padding-bottom: 2rem;
-            scroll-margin-top: 20rem;
+            margin-top: 5rem;
+            min-height: 100vh;
+            padding: 1rem;
+            scroll-margin-top: 5rem;
 
             h1 {
-                font-size: 2.5rem;
-                padding: 1rem;
+                font-size: 2rem;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
             }
 
             .description {
-                width: 90%;
-                height: 2.5rem;
+                width: 95%;
+                padding: 1rem;
                 transform: skew(-15deg);
                 
                 p {
-                    font-size: 0.9rem;
+                    font-size: 1rem;
+                    line-height: 1.4;
                 }
             }
 
             .download-button {
-                padding: 0.8rem 1.5rem;
-                font-size: 0.9rem;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                min-width: 160px;
             }
         }
     }

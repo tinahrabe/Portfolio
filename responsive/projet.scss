@@ -1,19 +1,22 @@
 @media (max-width: 768px) {
     .section2 {
-        height: auto;
+        height: 100vh;
         padding-bottom: 2rem;
 
         .container-project {
             .filtre-buttons {
-                flex-direction: column;
+               
                 gap: 0.5rem;
                 padding: 1rem;
-
+            }
                 button {
-                    width: 100%;
                     margin-right: 0;
                     margin-bottom: 0.5rem;
+                    display: flex;
+                    text-align: center;
+                    flex-wrap: wrap;
                 }
+                
             }
 
             .projets {
@@ -27,4 +30,3 @@
             }
         }
     }
-}

@@ -1,3 +1,100 @@
+// Base styles for contact section
+.section4 {
+    min-height: 100vh;
+    padding: 3rem 0;
+    background: $background-light;
+
+    .container-contact {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 2rem;
+
+        .message, .contact {
+            flex: 1;
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .message {
+            font-size: 1.1rem;
+            color: $text-color;
+            line-height: 1.6;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            input, textarea {
+                width: 100%;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                padding: 1rem;
+                font-size: 1rem;
+                transition: border-color 0.3s ease;
+
+                &:focus {
+                    border-color: $primary-color;
+                    outline: none;
+                }
+            }
+
+            button {
+                align-self: flex-start;
+                background: $primary-color;
+                color: white;
+                border: none;
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+
+                &:hover {
+                    background: darken($primary-color, 10%);
+                }
+            }
+        }
+    }
+}
+
+// Tablet responsive styles
+@media (max-width: $breakpoint-md) {
+    .section4 {
+        padding: 2rem 0;
+
+        .container-contact {
+            flex-direction: column;
+            padding: 1.5rem;
+
+            .message, .contact {
+                width: 100%;
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .contact {
+                input, textarea, button {
+                    font-size: 1rem;
+                    padding: 1rem;
+                }
+
+                button {
+                    min-width: 150px;
+                    padding: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+// Mobile responsive styles
 @media (max-width: $breakpoint-sm) {
     .section4 {
         min-height: 100vh;

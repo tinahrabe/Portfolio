@@ -1,3 +1,139 @@
+// Base styles for projects section
+.section2 {
+    min-height: 100vh;
+    padding: 2rem 0;
+    margin-top: 2rem;
+
+    .container-project {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+
+        .filtre-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+
+            button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                border: 2px solid $primary-color;
+                background: transparent;
+                color: $primary-color;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                border-radius: 5px;
+
+                &:hover {
+                    background: $primary-color;
+                    color: white;
+                }
+
+                &.active {
+                    background: $primary-color;
+                    color: white;
+                }
+            }
+        }
+
+        .projets {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+
+            .projet {
+                background: white;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+                }
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .content {
+                    padding: 1.5rem;
+
+                    h3 {
+                        font-size: 1.5rem;
+                        margin-bottom: 0.5rem;
+                        color: $text-color;
+                    }
+
+                    p {
+                        color: $text-secondary;
+                        line-height: 1.6;
+                        margin-bottom: 1rem;
+                    }
+
+                    .tags {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+
+                        span {
+                            background: $secondary-color;
+                            color: white;
+                            padding: 0.3rem 0.8rem;
+                            border-radius: 15px;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tablet responsive styles
+@media (max-width: $breakpoint-md) {
+    .section2 {
+        padding: 1.5rem 0;
+
+        .container-project {
+            padding: 1.5rem;
+
+            .filtre-buttons {
+                gap: 1rem;
+
+                button {
+                    padding: 0.8rem 1.5rem;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .projets {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+
+                .projet {
+                    .content {
+                        padding: 1.2rem;
+
+                        h3 {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile responsive styles
 @media (max-width: $breakpoint-sm) {
     .section2 {
         min-height: 100vh;
@@ -20,9 +156,9 @@
                     min-width: 100px;
                 }
             }
-        }
 
             .projets {
+                display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 1.5rem;
@@ -36,3 +172,4 @@
             }
         }
     }
+}

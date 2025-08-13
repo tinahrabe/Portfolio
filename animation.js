@@ -70,3 +70,19 @@ document.querySelectorAll('#nav-links a').forEach(link => {
         timesIcon.style.display = 'none';
     });
 });
+
+
+
+function adjustSectionHeights() {
+  const sections = document.querySelectorAll('section');
+  const windowHeight = window.innerHeight;
+  
+  sections.forEach(section => {
+    const contentHeight = section.scrollHeight;
+    section.style.minHeight = `${Math.max(windowHeight, contentHeight)}px`;
+  });
+}
+
+// Appeler au chargement et au redimensionnement
+window.addEventListener('load', adjustSectionHeights);
+window.addEventListener('resize', adjustSectionHeights);
